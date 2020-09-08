@@ -77,25 +77,47 @@
 
 //َQuestion 7 Lab 03
 //list of my fav colors as an array!!!
+//var favColor = ['black', 'blue', 'gray', 'red', 'yellwo', 'green', 'white', 'softwhite', 'darkgray', 'Ivory'];
+//The User will try to Guess one of My fav colors !!!
+
+
+// Mainloop: 
+// for(var x = 0; x <= 6; x++){
+// var userAnswer = prompt('Guess one of my fav colors and type it here?');
+//     childloop:
+//     for (var j = 0; j < favColor.length; j++) {
+//         if( userAnswer === favColor[j]){
+//             alert('Your Answer Is Corrct!!');
+//             break Mainloop;
+//        }else{
+//             alert('Your Answer is incorrect, Try again');
+//         }
+//     }
+    
+    
+// }
+
 var favColor = ['black', 'blue', 'gray', 'red', 'yellwo', 'green', 'white', 'softwhite', 'darkgray', 'Ivory'];
 //The User will try to Guess My fav colors at least one of them!!!
 var userAnswer;  //Empty string --> false 
-
-Mainloop: 
-for(var x = 0; x <= 6; x++){
+var break1 = 'false';
+// Mainloop: 
+for(var x = 0; x < 6; x++){
     userAnswer = prompt('Guess one of my fav colors and type it here?');
-    childloop:
+    // childloop:
     for (var j = 0; j < favColor.length; j++) {
         if( userAnswer === favColor[j]){
             alert('Your Answer Is Corrct!!');
-            break Mainloop;
-       }else{
-            alert('Your Answer is incorrect, Try again');
-        }
+            break1 = 'true' ;
+            break;
+            // break Mainloop;
+    //    }else{
+    //         alert('Your Answer is incorrect, Try again');
+    //     }
     }
-    
-    
 }
-
-
+if( break1 ==='true'){
+    break;
+}
+}
 
