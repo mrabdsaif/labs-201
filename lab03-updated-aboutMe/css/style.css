@@ -25,36 +25,77 @@ header p{
 }
 header p:hover{
     box-shadow: 4px 4px 6px 6px gainsboro;
-    border-radius: 50px;
+    border-radius: 12px;
     word-spacing: 30px;
 }
-h2 {
-    color: whitesmoke;
+main h2{
+    /* display: inline-block; */
+    color: darkslategrey;
     padding: 20px;
-    width: 30%;
+    width: 20%;
+    margin: auto;
+    font: 30px "Courier New", Courier, monospace;
+    text-align: center;
+}
+main h2:hover{
+    color: whitesmoke;
+}
+h3 {
+    color: whitesmoke;
+    padding: 5px;
+    width: 19%;
     margin: auto;
     text-align: center;
-    font: 30px "Courier New", Courier, monospace;
+    font: 20px "Courier New", Courier, monospace;
+    background-color: black;
 }
-.main-grid1{
-    display: inline-block;
+h3:hover{
+    letter-spacing: 1px;
+    box-shadow: 4px 4px 6px 6px gainsboro;
+}
+.main1{
+    width: 20%;
+    /* display: inline-block; */
+    /* display: grid; */
     /* grid-template-columns: 25fr 30fr 25fr; */
-    margin-left: 655px;
+    margin-left: 570px;
     line-height: 1.5;
     text-align: center;
     font: 10px 20px Tahoma, Geneva, sans-serif;
+    list-style-type: none; 
+    float: left;
+}
+/* main1, main2 and main3 should be in 
+just one a class but clear command was needed */
+.clear{
+    clear: both; 
 }
 .main2{
-    display: inline-block;
+    width: 20%;
+    /* display: inline-block; */
     /* grid-template-columns: 25fr 30fr 25fr; */
-    margin-left: 625px;
+    margin-left: 570px;
     line-height: 1.5;
     text-align: center;
     font: 10px 20px Tahoma, Geneva, sans-serif;
+    float: left;
+    list-style-type: none;
+}
+.main3{
+    /* width: 20%; */
+    /* display: inline-block; */
+    /* grid-template-columns: 25fr 30fr 25fr; */
+    margin-left: 640px;
+    line-height: 1.5;
+    text-align: center;
+    font: 10px 20px Tahoma, Geneva, sans-serif;
+    float: left;
+    list-style-type: none;
+    color: wheat;
 }
 .item1 {
     padding: 20px;
-    font-size: 15px;
+    font-size: 12px;
     font-family: "Comic Sans MS", cursive, sans-serif;
     text-align: center;
     
@@ -62,33 +103,28 @@ h2 {
 .item1:hover{
     background-color: #EDE7DC;
     color: rgb(94, 115, 124);
-    /* border-radius: 50%; */
+    border-radius: 5%;
 }
 .item2{
-    padding: 20px;
-    font-size: 15px;
+    width: 150px;
+    padding: 5px;
+    font-size: 20px;
     font-family: "Comic Sans MS", cursive, sans-serif;
-    text-align: center;
+    /* text-align: center; */
 }
 .item2:hover{
     background-color: #EDE7DC;
     color: rgb(94, 115, 124);
-    /* border-radius: 50%; */
+    border-radius: 70%;
+    box-shadow: 2px 2px 3px 3px gainsboro;
 }
 
- h3{
+ h4{
     background: #FDFDE9; 
 }
- h3:hover {
+ h4:hover {
     background-color: #EDE7DC;
 }
-.item2 p{
-    background: #FDFDE9;
-}
-.item2 p:hover{
-    background-color: #EDE7DC;
-}
-
 /* header p {
     background: #FDFDE9;
 }
@@ -100,5 +136,6 @@ header p:hover{
     background: #FDFDE9;
 }
 .item1 p:hover{
-    background-color: #EDE7DC;
+    /* background-color: #EDE7DC; */
+    letter-spacing: 4px;
 }
