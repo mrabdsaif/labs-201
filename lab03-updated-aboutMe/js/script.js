@@ -98,3 +98,4 @@ var userAnswer = prompt('Guess one of my fav colors and type it here?').toLowerC
         alert('Your Answer is incorrect, Try again');}
 }
 alert("Your score is "+score+" /7");
+
